@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startup Predictor | Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Outcome</h1>
+        <p>The status of this startup is predicted to be:</p>
+        <h2 style="color: #27ae60; text-transform: uppercase;">{{ result }}</h2>
+        <hr>
+        <a href="/predict_page"><button class="btn">Try Another</button></a>
+        <br>
+        <a href="/" style="display:block; margin-top:15px; color:#1e3c72;">Return Home</a>
+    </div>
+</body>
+</html>

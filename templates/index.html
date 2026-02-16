@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Startup Predictor | Parameters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container" style="max-width: 600px;"> <h1>Enter Startup Parameters</h1>
+        <form action="/predict" method="POST">
+            <input type="number" name="age_first_funding" placeholder="Age at First Funding Year" step="0.01" required>
+            <input type="number" name="age_last_funding" placeholder="Age at Last Funding Year" step="0.01" required>
+            <input type="number" name="age_first_milestone" placeholder="Age at First Milestone Year" step="0.01" required>
+            <input type="number" name="age_last_milestone" placeholder="Age at Last Milestone Year" step="0.01" required>
+            <input type="number" name="relationships" placeholder="Number of Relationships" required>
+            <input type="number" name="funding_rounds" placeholder="Number of Funding Rounds" required>
+            <input type="number" name="funding_total_usd" placeholder="Total Funding (in USD)" required>
+            <input type="number" name="milestones" placeholder="Number of Milestones" required>
+            <input type="number" name="avg_participants" placeholder="Average Participants" step="0.1" required>
+            
+            <button type="submit" class="btn" style="background-color: #28a745;">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
